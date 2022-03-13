@@ -1,14 +1,12 @@
-#include <stdio.h>                                                                                                                      
-#include <time.h>                                                                                                                       
-#include <stdlib.h>                                                                                                                     
-
-/**                                                                                                                                     
- * main - main block                                                                                                                    
- * Description: Get a random number and check its last digit, compare it with 5                                                         
- * Return: 0                                                                                                                            
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+/**
+ * main - main block
+ * Description: Get a random number and check its last digit, compare it with 5
+ * Return: 0
 */
 int main(void)
-
 {
 	int n;
 	int last;
@@ -24,8 +22,6 @@ int main(void)
 	else if (last < 6)
 		printf("Last digit of %i is %i and is less than 6 and not 0\n", n, last);
 
-
 	return (0);
 
 }
-
