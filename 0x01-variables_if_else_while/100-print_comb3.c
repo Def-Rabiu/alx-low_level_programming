@@ -8,25 +8,23 @@
  */
 int main(void)
 {
-	int c;
-	int d = 0;
+	int n, m;
 
-	while (d < 10)
+	for (n = 48; n <= 56; n++)
 	{
-		c = 0;
-		while (c < 10)
+		for (m = 49; m <= 57; m++)
 		{
-			putchar('0' + d);
-			putchar('0' + c);
-
-			if (c + d != 18)
+			if (m > n)
 			{
-				putchar(',');
-				putchar(' ');
+				putchar(n);
+				putchar(m);
+				if (n != 56 || m != 57)
+				{
+					putchar(',');
+					putchar(' ');
+				}
 			}
-			c++;
 		}
-		d++;
 	}
 	putchar('\n');
 	return (0);
